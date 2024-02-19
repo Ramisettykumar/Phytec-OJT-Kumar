@@ -1,0 +1,11 @@
+Changing the banner name for ruggedboard_sdcard.
+step1:First install the figlet.$sudo apt get install figlet.
+step2:$figlet kumar.
+step3:Paste that name in /etc/issue.$vi /etc/issue.
+step4:$cd ssh.
+step5:vi sshd_config.
+In that modify #no default banner path(around 121 line).Banner /etc/issue
+step6:cd
+step7:reboot
+Then board will booted with banner name you added i.e created by figlet.
+This process is for sd card boot only.
